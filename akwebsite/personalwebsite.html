@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<style type="text/css">
+		body {
+  background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.card {
+  width: 450px;
+  height: 250px;
+  background-color: blue;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+.card h1 {
+  text-align: center;
+}
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: #845EC2;
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+.card.black .additional {
+  background: black;
+}
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);*/
+}
+.card .additional .user-card .points {
+  top: 85%;
+}.card .additional .user-card svg {
+  top: 50%;
+}.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}.card .additional .more-info h1 {
+  color: white;
+  margin-bottom: 0;
+}.card.black .additional .more-info h1 {
+  color: white;
+}.card .additional .coords {
+  margin: 0 1rem;
+  color: white;
+  font-size: 1rem;
+}.card.black .additional .coords {
+  color: white;
+}.card .additional .coords span + span {
+  float: right;
+}
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+.card .additional img {
+  position: relative;
+  top: 65px;
+  left: 25px;
+  border-radius: 10%;
+  width: 100px;
+  height: auto;
+}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<div class="card">
+            <div class="additional">
+                <div class="user-card">                   
+                    <div class="points center">
+                    	<br><br>
+                        <a href="https://www.linkedin.com/in/akash-kumar-4a002917a/"><i class="fab fa-linkedin fa-1x"></i></a>
+  				        <a href="https://github.com/Akash5210"><i class="fab fa-github fa-1x"></i> </a>
+  				        <a href="https://www.instagram.com/itsakshah/"><i class="fab fa-instagram fa-1x"></i></a>
+                    </div>
+                    <img src="https://avatars0.githubusercontent.com/u/54371505?s=460&v=4" alt="Avatar">
+                </div>
+            <div class="more-info">
+                <h1>Akash Kumar</h1>
+                    <div class="coords">
+                        <span>Contact</span>
+                        <span>Current Address</span>
+
+                    </div>
+                    <div class="coords">
+                        <span>+918507202905</span>
+                        <span>RPH,Greater Noida</span>
+                        <span><a href="aboutme.html">Tap for fore details</a></span>
+                    </div>
+                    
+            </div>
+        </div>
+        <div class="general">
+            <h1>Akash Kumar</h1>
+            <p>Hello!! I am Akash Kumar, currently pursuing my B tech course in CSE at Galgotias University.
+            	</p>
+            <span class="more">Hover over the card for other info.></span>
+        </div>
+    </div>
+
+</body>
+</html>
