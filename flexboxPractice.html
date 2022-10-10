@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox practice</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            background-color: grey;
+            width: 700px;
+            margin: 20px auto;
+            display: flex;
+            justify-content:space-between;
+            /* justify-content: space-around/space-between/space-evenly/flex-start/flex-end/.. by default it is flex-start; */
+            flex-wrap:wrap;
+            
+        }
+        .children{
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child1{
+            background-color: green;
+            /* flex-grow: 1; */
+        }
+        .child2{
+            background-color: orange;
+            /* flex-grow: 1; */
+        }
+        .child3{
+            background-color: red;
+            /* flex-grow: 1; */
+        }
+        .child4{
+            background-color: aqua;
+        }
+        .child5{
+            background-color: purple;
+        }
+        .child6{
+            background-color: palegreen;
+        }
+        @media only screen and (max-width: 480px){
+            .parent{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="children child1">1</div>
+        <div class="children child2">2</div>
+        <div class="children child3">3</div>
+        <div class="children child4">4</div>
+        <div class="children child5">5</div>
+        <div class="children child6">6</div>
+    </div>
+</body>
+</html>
